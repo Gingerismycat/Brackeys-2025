@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b4vcc8jh7lyjh"]
+[gd_scene load_steps=7 format=3 uid="uid://3rvyi2c5s0sm"]
 
 [ext_resource type="Script" path="res://scripts/movecar.gd" id="1_gcgok"]
 [ext_resource type="Script" path="res://scripts/turnable.gd" id="1_k2ujg"]
+[ext_resource type="Texture2D" uid="uid://fwb2cus5u0qj" path="res://images/pixil-frame-0 (2).png" id="2_6cttt"]
 [ext_resource type="Texture2D" uid="uid://cpouu6t6rk5p5" path="res://images/15csv3.png" id="2_olife"]
 [ext_resource type="Texture2D" uid="uid://3o1d8j533fgb" path="res://images/carInterior.png" id="2_qfpvc"]
 [ext_resource type="Texture2D" uid="uid://bilgfvbna20fh" path="res://images/15csv2.png" id="3_2g41i"]
@@ -9,6 +10,11 @@
 [node name="Driver" type="Node2D"]
 script = ExtResource("1_gcgok")
 movementSpeed = 35
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(77.5, -251)
+scale = Vector2(2.175, 1.26667)
+texture = ExtResource("2_6cttt")
 
 [node name="CarInterior" type="Sprite2D" parent="."]
 texture_filter = 1
