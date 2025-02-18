@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://dptaenguoue27"]
+[gd_scene load_steps=2 format=3 uid="uid://0yo28qwe2a37"]
 
-[node name="Main" type="Node3D"]
+[ext_resource type="PackedScene" uid="uid://b4vcc8jh7lyjh" path="res://nodes/rotatewheel.tscn" id="1_u05lf"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(871, 532)
+
+[node name="Driver" parent="." instance=ExtResource("1_u05lf")]
