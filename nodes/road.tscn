@@ -1,10 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddrbmbuf7002n"]
+[gd_scene load_steps=5 format=3 uid="uid://ddrbmbuf7002n"]
 
 [ext_resource type="Texture2D" uid="uid://w4qp0h0bbcwe" path="res://images/road-removebg-preview.png" id="1_0qvqc"]
+[ext_resource type="Texture2D" uid="uid://c1qskxboidryr" path="res://images/pixil-frame-0 (7).png" id="2_r5ko0"]
+[ext_resource type="Texture2D" uid="uid://fiomx113ooo1" path="res://images/pixil-frame-0 (8).png" id="3_1l6vq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bhvbv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_r5ko0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1l6vq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Road-removebg-preview" type="Sprite2D" parent="."]
 position = Vector2(5, -177)
-scale = Vector2(13.92, 1.70833)
+scale = Vector2(15.1625, 1.58044)
 texture = ExtResource("1_0qvqc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(83, -187)
+scale = Vector2(5.07765, 0.526367)
+sprite_frames = SubResource("SpriteFrames_bhvbv")
+autoplay = "default"
+frame_progress = 0.579948
