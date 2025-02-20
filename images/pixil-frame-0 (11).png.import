@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w4qp0h0bbcwe"
-path="res://.godot/imported/road-removebg-preview.png-96821ac509f510c708f0de8cafed79bd.ctex"
+uid="uid://dvbp340usi6vm"
+path="res://.godot/imported/pixil-frame-0 (11).png-04d4f4614630b5eb2fb7f2820835f27b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/road-removebg-preview.png"
-dest_files=["res://.godot/imported/road-removebg-preview.png-96821ac509f510c708f0de8cafed79bd.ctex"]
+source_file="res://images/pixil-frame-0 (11).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (11).png-04d4f4614630b5eb2fb7f2820835f27b.ctex"]
 
 [params]
 
