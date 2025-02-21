@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ddrbmbuf7002n"]
 
-[ext_resource type="Texture2D" uid="uid://dbdf5xnxbygug" path="res://images/pixil-frame-0 (13).png" id="1_uarbg"]
-[ext_resource type="Texture2D" uid="uid://bg13jvnikdtcv" path="res://images/pixil-frame-0 (12).png" id="2_kbcfv"]
-[ext_resource type="Texture2D" uid="uid://dvbp340usi6vm" path="res://images/pixil-frame-0 (11).png" id="3_r43lj"]
+[ext_resource type="Texture2D" uid="uid://dbdf5xnxbygug" path="res://images/road.png" id="1_uarbg"]
+[ext_resource type="Texture2D" uid="uid://bg13jvnikdtcv" path="res://images/roadline1.png" id="2_kbcfv"]
+[ext_resource type="Texture2D" uid="uid://dvbp340usi6vm" path="res://images/roadline2.png" id="3_r43lj"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bhvbv"]
 animations = [{

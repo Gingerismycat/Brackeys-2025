@@ -2,26 +2,27 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fwb2cus5u0qj"
-path="res://.godot/imported/pixil-frame-0 (2).png-0175350396636b136314c3927c576774.ctex"
+uid="uid://bolpob5n6rvd"
+path.s3tc="res://.godot/imported/3dwheel.png-6630b291e8b3e394d8a1d25946697c8d.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://images/pixil-frame-0 (2).png"
-dest_files=["res://.godot/imported/pixil-frame-0 (2).png-0175350396636b136314c3927c576774.ctex"]
+source_file="res://3d tests/3dwheel.png"
+dest_files=["res://.godot/imported/3dwheel.png-6630b291e8b3e394d8a1d25946697c8d.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -31,4 +32,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0

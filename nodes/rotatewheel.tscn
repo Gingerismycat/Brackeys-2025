@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://scripts/movecar.gd" id="1_gcgok"]
 [ext_resource type="Script" path="res://scripts/turnable.gd" id="1_k2ujg"]
-[ext_resource type="Texture2D" uid="uid://fwb2cus5u0qj" path="res://images/pixil-frame-0 (2).png" id="2_6cttt"]
+[ext_resource type="Texture2D" uid="uid://fwb2cus5u0qj" path="res://images/sky.png" id="2_6cttt"]
 [ext_resource type="Texture2D" uid="uid://cpouu6t6rk5p5" path="res://images/15csv3.png" id="2_olife"]
-[ext_resource type="Texture2D" uid="uid://3o1d8j533fgb" path="res://images/carInterior.png" id="2_qfpvc"]
 [ext_resource type="Texture2D" uid="uid://bilgfvbna20fh" path="res://images/15csv2.png" id="3_2g41i"]
+[ext_resource type="Texture2D" uid="uid://deg3y8hm2snwh" path="res://images/carinterior(DO NOT USE FOR 3D).png" id="3_20glg"]
 
 [node name="Driver" type="Node2D"]
 position = Vector2(4, 0)
@@ -24,13 +24,14 @@ texture = ExtResource("2_6cttt")
 texture_filter = 1
 position = Vector2(70.5001, 5.74999)
 scale = Vector2(6.595, 6.595)
-texture = ExtResource("2_qfpvc")
+texture = ExtResource("3_20glg")
 
 [node name="Turnable" type="Node2D" parent="."]
 position = Vector2(-144, 192)
 script = ExtResource("1_k2ujg")
 
 [node name="Wheel" type="Sprite2D" parent="Turnable"]
+texture_filter = 1
 position = Vector2(1, -1)
 scale = Vector2(0.382447, 0.385638)
 texture = ExtResource("2_olife")
@@ -41,4 +42,3 @@ scale = Vector2(0.741979, 0.706146)
 texture = ExtResource("3_2g41i")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-scale = Vector2(2.52081, 1.07464)

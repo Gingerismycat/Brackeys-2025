@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5cq3o11r85f0"
-path="res://.godot/imported/road-removebg-preview.png-8235eb8ea4098cc2f8de7afde447cc49.ctex"
+uid="uid://bg13jvnikdtcv"
+path="res://.godot/imported/roadline1.png-596ee05763a46e5490d5e743e43a1837.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/road-removebg-preview.png"
-dest_files=["res://.godot/imported/road-removebg-preview.png-8235eb8ea4098cc2f8de7afde447cc49.ctex"]
+source_file="res://images/roadline1.png"
+dest_files=["res://.godot/imported/roadline1.png-596ee05763a46e5490d5e743e43a1837.ctex"]
 
 [params]
 

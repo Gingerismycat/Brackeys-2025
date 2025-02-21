@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg13jvnikdtcv"
-path="res://.godot/imported/pixil-frame-0 (12).png-3d9657cded69c2b557b5351ff49ab699.ctex"
+uid="uid://deg3y8hm2snwh"
+path="res://.godot/imported/carinterior(DO NOT USE FOR 3D).png-f63031d00008de570af9e941aea445b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/pixil-frame-0 (12).png"
-dest_files=["res://.godot/imported/pixil-frame-0 (12).png-3d9657cded69c2b557b5351ff49ab699.ctex"]
+source_file="res://images/carinterior(DO NOT USE FOR 3D).png"
+dest_files=["res://.godot/imported/carinterior(DO NOT USE FOR 3D).png-f63031d00008de570af9e941aea445b6.ctex"]
 
 [params]
 

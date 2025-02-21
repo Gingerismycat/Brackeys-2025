@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://0yo28qwe2a37"]
 
-[ext_resource type="PackedScene" uid="uid://b4vcc8jh7lyjh" path="res://nodes/rotatewheel.tscn" id="1_u05lf"]
+[ext_resource type="PackedScene" uid="uid://3rvyi2c5s0sm" path="res://nodes/rotatewheel.tscn" id="1_u05lf"]
 
 [node name="Main" type="Node2D"]
 position = Vector2(871, 532)
