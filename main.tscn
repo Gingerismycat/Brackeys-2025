@@ -8,7 +8,7 @@ position = Vector2(-1, 1)
 
 [node name="road" parent="." instance=ExtResource("1_piu87")]
 position = Vector2(56, 133)
-scale = Vector2(1.0993, 1.57682)
+scale = Vector2(-0.897624, 0.306304)
 
 [node name="Driver" parent="." instance=ExtResource("1_b50rc")]
 position = Vector2(1, -3)
