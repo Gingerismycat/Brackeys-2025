@@ -11,4 +11,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.273, 5.764)
 maxSideDistance = 10
 
 [node name="Node3D" parent="." instance=ExtResource("2_v3au1")]
-transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0, 1.14224, -2.28448)
+transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0, 1.14224, -27.0793)
