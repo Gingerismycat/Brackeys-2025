@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbdf5xnxbygug"
-path.s3tc="res://.godot/imported/road.png-8adfb4c99cf11562a46f2fff5129c1f4.s3tc.ctex"
+uid="uid://so65xq285nvr"
+path.s3tc="res://.godot/imported/pixil-frame-0 (17).png-5735ce866edac2380f7ba8b690d7075a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/road.png"
-dest_files=["res://.godot/imported/road.png-8adfb4c99cf11562a46f2fff5129c1f4.s3tc.ctex"]
+source_file="res://images/pixil-frame-0 (17).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (17).png-5735ce866edac2380f7ba8b690d7075a.s3tc.ctex"]
 
 [params]
 
