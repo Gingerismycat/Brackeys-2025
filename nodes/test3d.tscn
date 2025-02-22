@@ -25,5 +25,3 @@ shape = SubResource("BoxShape3D_aa4xi")
 
 [node name="Node3D" parent="." instance=ExtResource("2_v3au1")]
 transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0, 1.14224, -27.0793)
-
-[connection signal="tree_entered" from="Driver/StaticBody3D/CollisionShape3D" to="." method="_on_collision_shape_3d_tree_entered"]
