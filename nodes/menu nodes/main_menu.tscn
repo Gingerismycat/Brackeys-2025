@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://v13kgu044cp5"]
+[gd_scene load_steps=9 format=3 uid="uid://v13kgu044cp5"]
 
 [ext_resource type="Texture2D" uid="uid://so65xq285nvr" path="res://images/road2.png" id="1_t5peh"]
 [ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="2_l7fgt"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://5vac3fegio76" path="res://images/ElGato_transparentwithwheel.png" id="4_34h7i"]
 [ext_resource type="Script" path="res://scripts/menu scripts/help_button.gd" id="4_xpaa5"]
 [ext_resource type="Texture2D" uid="uid://ena1l8x7b4ym" path="res://images/ElGato_transparentwithwheelwide.png" id="5_oiub2"]
+[ext_resource type="Texture2D" uid="uid://coft28tqkcnu7" path="res://images/ElGato_transparentwithwheel3.png" id="7_pidvv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yney0"]
 animations = [{
@@ -15,6 +16,9 @@ animations = [{
 }, {
 "duration": 0.8,
 "texture": ExtResource("5_oiub2")
+}, {
+"duration": 0.8,
+"texture": ExtResource("7_pidvv")
 }],
 "loop": true,
 "name": &"default",
@@ -33,7 +37,7 @@ offset_bottom = 433.0
 
 [node name="Road2" type="Sprite2D" parent="MainMenu"]
 position = Vector2(56, -119)
-scale = Vector2(6.86805, 2.64063)
+scale = Vector2(11.3243, 4.35397)
 texture = ExtResource("1_t5peh")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MainMenu"]
@@ -52,9 +56,9 @@ theme_override_colors/default_color = Color(0.792963, 0.5396, 0.597794, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 theme_override_fonts/normal_font = ExtResource("2_l7fgt")
-theme_override_font_sizes/normal_font_size = 39
+theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
-text = "[rainbow freq=.1][tornado radius=7 freq=10] Drink (Apple Juice) and Drive"
+text = "[rainbow freq=.1][tornado radius=7 freq=10]Drink (Apple Juice) and Drive"
 fit_content = true
 autowrap_mode = 0
 tab_size = 5
@@ -81,11 +85,12 @@ text = "Help?"
 script = ExtResource("4_xpaa5")
 
 [node name="cat" type="AnimatedSprite2D" parent="MainMenu/VBoxContainer"]
-position = Vector2(788, 44)
+position = Vector2(788, 45)
 scale = Vector2(0.580997, 0.732706)
 sprite_frames = SubResource("SpriteFrames_yney0")
 autoplay = "default"
-frame_progress = 0.554116
+frame = 1
+frame_progress = 0.238917
 
 [connection signal="pressed" from="MainMenu/VBoxContainer/DriveButton" to="MainMenu/VBoxContainer/DriveButton" method="_on_pressed"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/HelpButton" to="MainMenu/VBoxContainer/HelpButton" method="_on_pressed"]
