@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b8x8i41mh24s6"]
+[gd_scene load_steps=7 format=3 uid="uid://cvym7vmh2dvo1"]
 
 [ext_resource type="Script" path="res://scripts/car.gd" id="1_lcv03"]
 [ext_resource type="ArrayMesh" uid="uid://bnaxj0t5lob7l" path="res://3d tests/untitled.obj" id="2_td1va"]

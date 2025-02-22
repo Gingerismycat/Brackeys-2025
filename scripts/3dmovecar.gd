@@ -8,8 +8,6 @@ extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print(movementSpeed)
-	print(maxSideDistance)
 	pass # Replace with function body.
 
 
@@ -21,5 +19,5 @@ func _process(delta):
 		if Input.is_action_pressed("Left") and driver.global_position.x > currentPos -maxSideDistance:
 			driver.global_position.x-=movementSpeed*delta
 		if(Drunkness.drunk>0 && randi_range(0,100) > 100-Drunkness.drunk):
-			delay_timer.set_wait_time(0.1)
+			delay_timer.set_wait_time(randf_range(0.1,0.1+Drunkness.drunk/100))
 			delay_timer.start()
