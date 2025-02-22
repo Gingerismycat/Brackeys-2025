@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bolpob5n6rvd"
-path.s3tc="res://.godot/imported/3dwheel.png-6630b291e8b3e394d8a1d25946697c8d.s3tc.ctex"
+uid="uid://cu8iubled3d2r"
+path.s3tc="res://.godot/imported/road4.png-9f5241547e849da1e2d0beaafd618549.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://3d tests/3dwheel.png"
-dest_files=["res://.godot/imported/3dwheel.png-6630b291e8b3e394d8a1d25946697c8d.s3tc.ctex"]
+source_file="res://images/road4.png"
+dest_files=["res://.godot/imported/road4.png-9f5241547e849da1e2d0beaafd618549.s3tc.ctex"]
 
 [params]
 

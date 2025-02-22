@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kguetdqhoa"
-path.s3tc="res://.godot/imported/3dhand.png-9ec068115020e947c0c2118b7d13f7cb.s3tc.ctex"
+uid="uid://c1elljx4jwdjv"
+path.s3tc="res://.godot/imported/road3.png-af9735d18655cd821f547d5ab622c34b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://3d tests/3dhand.png"
-dest_files=["res://.godot/imported/3dhand.png-9ec068115020e947c0c2118b7d13f7cb.s3tc.ctex"]
+source_file="res://images/road3.png"
+dest_files=["res://.godot/imported/road3.png-af9735d18655cd821f547d5ab622c34b.s3tc.ctex"]
 
 [params]
 

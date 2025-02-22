@@ -1,0 +1,69 @@
+[gd_scene load_steps=10 format=3 uid="uid://cesekmju5l2br"]
+
+[ext_resource type="Script" path="res://scripts/3dmovecar.gd" id="1_mwmwg"]
+[ext_resource type="Texture2D" uid="uid://kguetdqhoa" path="res://images/3dhand.png" id="2_66eco"]
+[ext_resource type="Script" path="res://scripts/3dTurnable.gd" id="2_lyfdl"]
+[ext_resource type="Texture2D" uid="uid://ii8dls16q6vb" path="res://images/higheresinterior.png" id="2_m3u33"]
+[ext_resource type="Texture2D" uid="uid://bolpob5n6rvd" path="res://images/3dwheel.png" id="3_qhjkh"]
+[ext_resource type="Texture2D" uid="uid://cg4odvc6eqvsu" path="res://images/drinking1.png" id="6_i0wgq"]
+[ext_resource type="Texture2D" uid="uid://cy6lb1fkavxrr" path="res://images/drinking2.png" id="7_jspq6"]
+[ext_resource type="Texture2D" uid="uid://crspkbguy66ns" path="res://images/drinking3.png" id="8_scv5u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ly42"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_i0wgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jspq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_scv5u")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Driver" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.113434, -0.288178, 0.323915)
+script = ExtResource("1_mwmwg")
+movementSpeed = 10
+
+[node name="CarInterior" type="Sprite3D" parent="."]
+transform = Transform3D(0.0938047, 0, 0, 0, 0.102922, 0, 0, 0, 0.0877271, 0.000601023, 0.418366, -0.465866)
+texture_filter = 0
+render_priority = 2
+texture = ExtResource("2_m3u33")
+
+[node name="Turnable" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.150869, 0.288, -0.327)
+script = ExtResource("2_lyfdl")
+
+[node name="Wheel" type="Sprite3D" parent="Turnable"]
+transform = Transform3D(0.0260385, 0, 0, 0, 0.0260385, 0, 0, 0, 0.318122, 0.000189997, 0.000129998, -0.000497997)
+render_priority = 2
+texture = ExtResource("3_qhjkh")
+
+[node name="Hand" type="Sprite3D" parent="Turnable"]
+transform = Transform3D(0.0426923, 0, 0, 0, 0.0426923, 0, 0, 0, 0.743683, 0.0401632, 0.0704817, 0.021044)
+texture_filter = 0
+render_priority = 2
+texture = ExtResource("2_66eco")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.421114, 0)
+
+[node name="Juice" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(0.05327, 0, 0, 0, 0.05327, 0, 0, 0, 0.0753276, -0.311565, 0.34825, -0.293212)
+texture_filter = 0
+render_priority = 3
+sprite_frames = SubResource("SpriteFrames_7ly42")
+
+[node name="DelayTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="DrinkTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true

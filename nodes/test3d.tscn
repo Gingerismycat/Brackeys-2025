@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu6ei70r4t1wd"]
+
+[ext_resource type="PackedScene" uid="uid://cesekmju5l2br" path="res://nodes/3d_rotate_wheel.tscn" id="2_b6n6c"]
+[ext_resource type="PackedScene" uid="uid://b64tq3cqrt83e" path="res://nodes/road 3d.tscn" id="2_v3au1"]
+
+[node name="3DMain" type="Node3D"]
+transform = Transform3D(0.875472, 0, 0, 0, 0.875472, 0, 0, 0, 0.875472, 0, 0, 0)
+
+[node name="Driver" parent="." instance=ExtResource("2_b6n6c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.273, 5.764)
+maxSideDistance = 10
+
+[node name="Node3D" parent="." instance=ExtResource("2_v3au1")]
+transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0, 1.14224, -2.28448)

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drbmb5kmqc4e6"
-path.s3tc="res://.godot/imported/pixil-frame-0 (14).png-944a871e0c6fcf26da1e63dd673b9ef6.s3tc.ctex"
+uid="uid://bolpob5n6rvd"
+path.s3tc="res://.godot/imported/3dwheel.png-0aea841d04bced50b1ac7978e0517f58.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/pixil-frame-0 (14).png"
-dest_files=["res://.godot/imported/pixil-frame-0 (14).png-944a871e0c6fcf26da1e63dd673b9ef6.s3tc.ctex"]
+source_file="res://images/3dwheel.png"
+dest_files=["res://.godot/imported/3dwheel.png-0aea841d04bced50b1ac7978e0517f58.s3tc.ctex"]
 
 [params]
 
