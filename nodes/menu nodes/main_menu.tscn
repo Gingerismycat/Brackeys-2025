@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://v13kgu044cp5"]
+
+[ext_resource type="Texture2D" uid="uid://so65xq285nvr" path="res://images/road2.png" id="1_t5peh"]
+[ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="2_l7fgt"]
+[ext_resource type="Script" path="res://scripts/menu scripts/drive_button.gd" id="3_ee40b"]
+[ext_resource type="Texture2D" uid="uid://5vac3fegio76" path="res://images/ElGato_transparentwithwheel.png" id="4_34h7i"]
+[ext_resource type="Script" path="res://scripts/menu scripts/help_button.gd" id="4_xpaa5"]
+[ext_resource type="Texture2D" uid="uid://ena1l8x7b4ym" path="res://images/ElGato_transparentwithwheelwide.png" id="5_oiub2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yney0"]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("4_34h7i")
+}, {
+"duration": 0.8,
+"texture": ExtResource("5_oiub2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 648.0
+offset_top = 393.0
+offset_right = 688.0
+offset_bottom = 433.0
+
+[node name="Road2" type="Sprite2D" parent="MainMenu"]
+position = Vector2(56, -119)
+scale = Vector2(6.86805, 2.64063)
+texture = ExtResource("1_t5peh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu"]
+layout_mode = 0
+offset_left = -473.0
+offset_top = -155.0
+offset_right = 1.0
+offset_bottom = -15.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MainMenu/VBoxContainer"]
+texture_filter = 1
+clip_contents = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0.792963, 0.5396, 0.597794, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = ExtResource("2_l7fgt")
+theme_override_font_sizes/normal_font_size = 39
+bbcode_enabled = true
+text = "[rainbow freq=.1][tornado radius=7 freq=10] Drink (Apple Juice) and Drive"
+fit_content = true
+autowrap_mode = 0
+tab_size = 5
+
+[node name="DriveButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_hover_color = Color(5.94415e-06, 0.613276, 0.141151, 1)
+theme_override_colors/font_color = Color(0.698124, 0.196142, 0.298485, 1)
+theme_override_fonts/font = ExtResource("2_l7fgt")
+theme_override_font_sizes/font_size = 38
+text = "Drive!"
+script = ExtResource("3_ee40b")
+
+[node name="HelpButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0.611765, 0.141176, 1)
+theme_override_colors/font_color = Color(0.680476, 0.188485, 0.288958, 1)
+theme_override_fonts/font = ExtResource("2_l7fgt")
+theme_override_font_sizes/font_size = 38
+text = "Help?"
+script = ExtResource("4_xpaa5")
+
+[node name="cat" type="AnimatedSprite2D" parent="MainMenu/VBoxContainer"]
+position = Vector2(788, 44)
+scale = Vector2(0.580997, 0.732706)
+sprite_frames = SubResource("SpriteFrames_yney0")
+autoplay = "default"
+frame_progress = 0.554116
+
+[connection signal="pressed" from="MainMenu/VBoxContainer/DriveButton" to="MainMenu/VBoxContainer/DriveButton" method="_on_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/HelpButton" to="MainMenu/VBoxContainer/HelpButton" method="_on_pressed"]

@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://dgygj30b6w7p6"]
+
+[ext_resource type="Texture2D" uid="uid://so65xq285nvr" path="res://images/road2.png" id="1_p7l81"]
+[ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="2_hvvpq"]
+[ext_resource type="Texture2D" uid="uid://crspkbguy66ns" path="res://images/drinking3.png" id="3_7b2qi"]
+[ext_resource type="Texture2D" uid="uid://bolpob5n6rvd" path="res://images/3dwheel.png" id="4_j8alb"]
+[ext_resource type="Texture2D" uid="uid://dy31hvgbdtclx" path="res://images/car.png" id="5_gjo2p"]
+[ext_resource type="Script" path="res://scripts/menu scripts/return_button.gd" id="6_q2n1k"]
+
+[node name="HelpMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Road2" type="Sprite2D" parent="."]
+position = Vector2(707, 381)
+scale = Vector2(9.41802, 7.99215)
+texture = ExtResource("1_p7l81")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -256.0
+offset_bottom = 352.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.764815, 0.764815)
+theme_override_fonts/normal_font = ExtResource("2_hvvpq")
+theme_override_font_sizes/normal_font_size = 38
+text = " - Use arrow keys or A and D to move right or left!
+
+
+
+
+- Press Q to drink the apple juice. Doing so increases your Funny Meter!
+
+
+
+
+ - Avoid the cars or you lose!
+
+
+
+
+- Cars move faster as time passes!"
+fit_content = true
+
+[node name="DrinkingImg" type="Sprite2D" parent="."]
+position = Vector2(929, 217)
+scale = Vector2(0.304311, 0.304311)
+texture = ExtResource("3_7b2qi")
+
+[node name="3Dwheel" type="Sprite2D" parent="."]
+position = Vector2(703, 85)
+scale = Vector2(0.150716, 0.150716)
+texture = ExtResource("4_j8alb")
+
+[node name="Car" type="Sprite2D" parent="."]
+position = Vector2(546, 427)
+scale = Vector2(0.778136, 0.778136)
+texture = ExtResource("5_gjo2p")
+
+[node name="Return Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 774.0
+offset_top = 552.0
+offset_right = 1122.0
+offset_bottom = 598.0
+theme_override_colors/font_hover_color = Color(3.82639e-06, 0.549889, 3.85046e-07, 1)
+theme_override_colors/font_color = Color(0.46885, 0.681163, 0.396291, 1)
+theme_override_fonts/font = ExtResource("2_hvvpq")
+theme_override_font_sizes/font_size = 38
+text = "Return to Main Menu?"
+script = ExtResource("6_q2n1k")
+
+[connection signal="pressed" from="Return Button" to="Return Button" method="_on_pressed"]
