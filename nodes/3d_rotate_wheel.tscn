@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cesekmju5l2br"]
+[gd_scene load_steps=12 format=3 uid="uid://cesekmju5l2br"]
 
 [ext_resource type="Script" path="res://scripts/3dmovecar.gd" id="1_mwmwg"]
 [ext_resource type="Texture2D" uid="uid://kguetdqhoa" path="res://images/3dhand.png" id="2_66eco"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cg4odvc6eqvsu" path="res://images/drinking1.png" id="6_i0wgq"]
 [ext_resource type="Texture2D" uid="uid://cy6lb1fkavxrr" path="res://images/drinking2.png" id="7_jspq6"]
 [ext_resource type="Texture2D" uid="uid://crspkbguy66ns" path="res://images/drinking3.png" id="8_scv5u"]
+[ext_resource type="Script" path="res://scripts/menu scripts/gui.gd" id="9_siedx"]
+[ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="10_1jupj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7ly42"]
 animations = [{
@@ -67,3 +69,37 @@ one_shot = true
 [node name="DrinkTimer" type="Timer" parent="."]
 wait_time = 5.0
 one_shot = true
+
+[node name="GUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("9_siedx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 2
+
+[node name="Score" type="Label" parent="GUI/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("10_1jupj")
+theme_override_font_sizes/font_size = 38
+text = "I love cats"
+
+[node name="FunnyMeter" type="RichTextLabel" parent="GUI/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/normal_font = ExtResource("10_1jupj")
+theme_override_font_sizes/normal_font_size = 38
+bbcode_enabled = true
+text = "[rainbow]Funny Meter"
+fit_content = true
+autowrap_mode = 0
