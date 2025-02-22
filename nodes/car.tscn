@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8x8i41mh24s6"]
+[gd_scene load_steps=7 format=3 uid="uid://b8x8i41mh24s6"]
 
 [ext_resource type="Script" path="res://scripts/car.gd" id="1_lcv03"]
 [ext_resource type="ArrayMesh" uid="uid://bnaxj0t5lob7l" path="res://3d tests/untitled.obj" id="2_td1va"]
+[ext_resource type="Material" uid="uid://dnyfwm575o0pw" path="res://Colors/purple.tres" id="3_t1yad"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fx5cb"]
 points = PackedVector3Array(1.43278, 3.69703, 0.643519, -1.538, 0.484932, -4.97844, -1.49606, 0.76911, -4.87107, -1.538, 0.484932, 2.76944, 1.49751, 0.4745, -5.00146, -1.48479, 3.93329, -0.63765, 1.49748, 0.474532, 2.79239, 1.55157, 2.05116, -4.13022, -1.538, 3.26859, 1.92078, -1.60105, 2.05116, -4.13022, 1.49008, 3.26965, 1.9239, 1.30812, 3.78579, -1.1045, -1.51568, 3.49176, 1.75661, 1.43531, 3.93329, -0.63765, -1.35761, 3.78579, -1.1045, -1.53077, 0.734409, 2.75093, 1.4662, 3.49176, 1.75661, 1.44657, 0.76911, -4.87107, 1.46953, 0.746164, 2.72083)
@@ -24,8 +25,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
 script = ExtResource("1_lcv03")
 
 [node name="car_Body" type="MeshInstance3D" parent="cars"]
-transform = Transform3D(0.00159727, 0, -0.287698, 0, 0.287301, 0, 0.382913, 0, 0.00120009, -30.0476, -0.355434, -0.316026)
+transform = Transform3D(0.00159727, 0, -0.287698, 0, 0.287301, 0, 0.382913, 0, 0.00120009, -30.3296, -0.268558, -0.308158)
 mesh = ExtResource("2_td1va")
+surface_material_override/0 = ExtResource("3_t1yad")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="cars"]
 transform = Transform3D(-1.67378e-08, 0, 0.287701, 0, 0.287301, 0, -0.382916, 0, -1.25758e-08, -30.0476, -0.355434, -0.316026)

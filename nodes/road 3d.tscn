@@ -73,7 +73,7 @@ autoplay = "default"
 frame_progress = 0.400022
 
 [node name="Road" type="MeshInstance3D" parent="."]
-transform = Transform3D(67.6888, 0, 0, 0, 0.100109, 0, 0, 0, 18.6002, -0.0213755, -0.19115, 0.000249863)
+transform = Transform3D(70, 0, 0, 0, 0.1, 0, 0, 0, 20, -0.0213755, -0.19115, 0.000249863)
 mesh = SubResource("BoxMesh_pixrg")
 surface_material_override/0 = SubResource("StandardMaterial3D_4url0")
 
@@ -86,7 +86,7 @@ shape = SubResource("ConcavePolygonShape3D_icsg4")
 transform = Transform3D(0.0117103, 0.00586831, -0.00900705, -1.50109e-05, 9.98911, -9.76971e-05, 0.0327775, 0.0403374, 0.0426151, -0.451022, 32.7516, 0.538919)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01663, 0.370968, 9.29479)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01663, 0.370968, 10.4191)
 mesh = SubResource("BoxMesh_ue3od")
 skeleton = NodePath("../Road")
 
@@ -96,7 +96,7 @@ skeleton = NodePath("../Road")
 shape = SubResource("ConcavePolygonShape3D_o16lo")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.04358, 0.39211, -9.876)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.01175, 0.435865, -10.5762)
 mesh = SubResource("BoxMesh_ue3od")
 skeleton = NodePath("../Road")
 
@@ -116,6 +116,7 @@ skeleton = NodePath("../Road")
 shape = SubResource("ConcavePolygonShape3D_o16lo")
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
 one_shot = true
 autostart = true
 
