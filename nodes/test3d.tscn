@@ -1,14 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://bu6ei70r4t1wd"]
+[gd_scene load_steps=5 format=3 uid="uid://bu6ei70r4t1wd"]
 
+[ext_resource type="Script" path="res://nodes/gamedoneornot.gd" id="1_0dyg2"]
 [ext_resource type="PackedScene" uid="uid://cesekmju5l2br" path="res://nodes/3d_rotate_wheel.tscn" id="2_b6n6c"]
 [ext_resource type="PackedScene" uid="uid://b64tq3cqrt83e" path="res://nodes/road 3d.tscn" id="2_v3au1"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_aa4xi"]
+size = Vector3(1.5, 1, 1)
+
 [node name="3DMain" type="Node3D"]
 transform = Transform3D(0.875472, 0, 0, 0, 0.875472, 0, 0, 0, 0.875472, 0, 0, 0)
+script = ExtResource("1_0dyg2")
 
 [node name="Driver" parent="." instance=ExtResource("2_b6n6c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.273, 5.764)
 maxSideDistance = 10
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Driver"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Driver/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0618134, 0.697865, -0.95619)
+shape = SubResource("BoxShape3D_aa4xi")
+
 [node name="Node3D" parent="." instance=ExtResource("2_v3au1")]
 transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0, 1.14224, -27.0793)
+
+[connection signal="tree_entered" from="Driver/StaticBody3D/CollisionShape3D" to="." method="_on_collision_shape_3d_tree_entered"]
