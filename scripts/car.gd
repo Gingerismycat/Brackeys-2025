@@ -20,9 +20,12 @@ func _ready():
 		car.set_surface_override_material(0,mat4)
 	elif color == 5:
 		car.set_surface_override_material(0,mat5)
+	scale.x =0.7
+	scale.y =0.7
+	scale.z = 0.7
 func _physics_process(_delta):
 	var time = work.time
 	position.x +=0.3+time
-	if position.x > 65:
+	if position.x > 80:
 		queue_free()
 	

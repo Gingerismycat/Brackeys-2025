@@ -36,7 +36,7 @@ data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0
 script = ExtResource("1_yp8mc")
 
 [node name="marker1" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, -3.42667e-21, -5.83238e-07, -5.394, -5.394, -5.83238e-07, 1.03062e-14, -0.0881454, -0.087, -6.739)
+transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83241e-07, -5.394, -5.394, -5.83241e-07, 1.03062e-14, -0.0881454, -0.087, -6.739)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -44,7 +44,7 @@ autoplay = "default"
 frame_progress = 0.455353
 
 [node name="marker2" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, -1.25645e-20, -5.83238e-07, -5.394, -5.394, -5.83238e-07, 1.03062e-14, -0.176405, -0.0872364, -2.6487)
+transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83241e-07, -5.394, -5.394, -5.83241e-07, 1.03062e-14, -0.176405, -0.0872364, -2.6487)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -52,7 +52,7 @@ autoplay = "default"
 frame_progress = 0.020977
 
 [node name="marker3" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83238e-07, -5.394, -5.394, -5.83238e-07, 1.03062e-14, -0.221723, -0.087, 2.042)
+transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83241e-07, -5.394, -5.394, -5.83241e-07, 1.03062e-14, -0.221723, -0.087, 2.042)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -60,7 +60,7 @@ autoplay = "default"
 frame_progress = 0.534966
 
 [node name="marker4" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(0.0188277, 13.3428, -0.000593314, -0.00886207, -0.00139196, -5.39312, -5.42156, 0.0463385, 0.00881351, 0.559955, -0.087, 6.204)
+transform = Transform3D(0.0188279, 13.3428, -2.3574e-07, 0, -5.83236e-07, -5.39313, -5.42157, 0.0463365, -8.18671e-10, 0.559955, -0.087, 6.204)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -78,10 +78,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_4url0")
 shape = SubResource("ConcavePolygonShape3D_icsg4")
 
 [node name="Camera3D" type="Camera3D" parent="Road"]
-transform = Transform3D(0.0117103, 0.00586831, -0.00900705, -1.50109e-05, 9.98911, -9.76971e-05, 0.0327775, 0.0403374, 0.0426151, -0.451022, 32.7516, 0.538919)
+transform = Transform3D(0.0117103, -0.00612657, -0.0410175, -1.50109e-05, 9.98919, -3.5079e-05, 0.0327775, 0.0067635, 0.0146542, -0.451022, 32.7516, 0.538919)
 
 [node name="marker5" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, -3.42667e-21, -5.83238e-07, -5.394, -5.394, -5.83238e-07, 1.03062e-14, -69.1967, -0.087, -6.739)
+transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83241e-07, -5.394, -5.394, -5.83241e-07, 1.03062e-14, -69.1967, -0.087, -6.739)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -89,7 +89,7 @@ autoplay = "default"
 frame_progress = 0.455353
 
 [node name="marker6" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, -1.25645e-20, -5.83238e-07, -5.394, -5.394, -5.83238e-07, 1.03062e-14, -69.285, -0.0872364, -2.6487)
+transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83241e-07, -5.394, -5.394, -5.83241e-07, 1.03062e-14, -69.285, -0.0872364, -2.6487)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -97,7 +97,7 @@ autoplay = "default"
 frame_progress = 0.020977
 
 [node name="marker7" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83238e-07, -5.394, -5.394, -5.83238e-07, 1.03062e-14, -69.3303, -0.087, 2.042)
+transform = Transform3D(-2.35779e-07, 13.343, -2.35779e-07, 0, -5.83241e-07, -5.394, -5.394, -5.83241e-07, 1.03062e-14, -69.3303, -0.087, 2.042)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -105,7 +105,7 @@ autoplay = "default"
 frame_progress = 0.534966
 
 [node name="marker8" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(0.0188277, 13.3428, -0.000593314, -0.00886207, -0.00139196, -5.39312, -5.42156, 0.0463385, 0.00881351, -68.5486, -0.087, 6.204)
+transform = Transform3D(0.0188279, 13.3428, -2.3574e-07, 0, -5.83236e-07, -5.39313, -5.42157, 0.0463365, -8.18671e-10, -68.5486, -0.087, 6.204)
 texture_filter = 0
 render_priority = 1
 sprite_frames = SubResource("SpriteFrames_sugu1")
@@ -143,27 +143,27 @@ mesh = ExtResource("6_o678s")
 skeleton = NodePath("../Timer2")
 
 [node name="rails5" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.2768, -0.218957, -9.1446)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 19.2768, -0.218957, -9.75676)
 mesh = ExtResource("6_o678s")
 skeleton = NodePath("../Timer2")
 
 [node name="rails6" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.7945, -0.218957, -9.1446)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14.7945, -0.218957, -9.75676)
 mesh = ExtResource("6_o678s")
 skeleton = NodePath("../Timer2")
 
 [node name="rails7" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -48.7274, -0.218957, -9.1446)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -48.7274, -0.218957, -9.75676)
 mesh = ExtResource("6_o678s")
 skeleton = NodePath("../Timer2")
 
 [node name="rails8" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -82.7987, -0.218957, -9.1446)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -82.7987, -0.218957, -9.75676)
 mesh = ExtResource("6_o678s")
 skeleton = NodePath("../Timer2")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.4
+wait_time = 0.6
 one_shot = true
 autostart = true
 
