@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b64tq3cqrt83e" path="res://nodes/road 3d.tscn" id="2_v3au1"]
 [ext_resource type="AudioStream" uid="uid://bbaqno74bji5b" path="res://audio/AppleJuice.mp3" id="4_mco10"]
 [ext_resource type="Script" path="res://scripts/background_music.gd" id="5_duv5k"]
-[ext_resource type="Texture2D" uid="uid://c1xsfbw6cjqva" path="res://3d tests/NightSkyHDRI003_1K-HDR.exr" id="6_05524"]
+[ext_resource type="Texture2D" uid="uid://bqmrd6u5jpreb" path="res://3d tests/kloppenheim_02_puresky_2k.exr" id="6_54r1t"]
 
 [sub_resource type="GDScript" id="GDScript_0mb3m"]
 script/source = "extends Node3D
@@ -15,7 +15,7 @@ script/source = "extends Node3D
 size = Vector3(1.16162, 1, 0.16748)
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_navwn"]
-panorama = ExtResource("6_05524")
+panorama = ExtResource("6_54r1t")
 
 [sub_resource type="Sky" id="Sky_wdr05"]
 sky_material = SubResource("PanoramaSkyMaterial_navwn")

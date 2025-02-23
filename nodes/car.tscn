@@ -30,26 +30,26 @@ mesh = ExtResource("2_td1va")
 surface_material_override/0 = ExtResource("3_t1yad")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="cars"]
-transform = Transform3D(0.00159726, 0, -0.287698, 0, 0.287301, 0, 0.382913, 0, 0.00120009, -30.3296, -0.268558, -0.308158)
+transform = Transform3D(0.00159726, 0, -0.287698, 0, 0.397673, 0, 0.382913, 0, 0.00120009, -30.3296, -0.663981, -0.308158)
 shape = SubResource("ConvexPolygonShape3D_phndo")
 
-[node name="front_left2" type="MeshInstance3D" parent="cars"]
-transform = Transform3D(-0.999994, -1.84476e-05, -0.0034896, 0.00348965, -0.00523449, -0.99998, 2.08616e-07, -0.999986, 0.00523452, -29.4928, -0.226077, -0.807755)
+[node name="front_left2" type="MeshInstance3D" parent="cars/CollisionShape3D"]
+transform = Transform3D(-0.0108929, -2.61148, 0.013632, 0.00877518, -0.0131628, -2.51458, 3.47579, -0.0144344, 0.0122051, -1.29559, 1.10117, -2.91583)
 mesh = SubResource("CylinderMesh_ndp5d")
 skeleton = NodePath("")
 
-[node name="Front_Right" type="MeshInstance3D" parent="cars"]
-transform = Transform3D(-0.999994, -1.84476e-05, -0.0034896, 0.00348965, -0.00523449, -0.99998, 2.08616e-07, -0.999986, 0.00523452, -29.447, -0.226077, 0.216081)
+[node name="Front_Right" type="MeshInstance3D" parent="cars/CollisionShape3D"]
+transform = Transform3D(-0.0108929, -2.61148, 0.013632, 0.00877518, -0.0131628, -2.51458, 3.47579, -0.0144344, 0.0122051, 1.37867, 1.10117, -3.06018)
 mesh = SubResource("CylinderMesh_ndp5d")
 skeleton = NodePath("")
 
-[node name="Back_left" type="MeshInstance3D" parent="cars"]
-transform = Transform3D(-0.999994, -1.84476e-05, -0.0034896, 0.00348965, -0.00523449, -0.99998, 2.08616e-07, -0.999986, 0.00523452, -30.7464, -0.237922, -0.805228)
+[node name="Back_left" type="MeshInstance3D" parent="cars/CollisionShape3D"]
+transform = Transform3D(-0.0108929, -2.61148, 0.013632, 0.00877518, -0.0131628, -2.51458, 3.47579, -0.0144344, 0.0122051, -1.30265, 1.07138, 1.44148)
 mesh = SubResource("CylinderMesh_ndp5d")
 skeleton = NodePath("")
 
-[node name="back_right" type="MeshInstance3D" parent="cars"]
-transform = Transform3D(-0.999994, -1.84476e-05, -0.0034896, 0.00348965, -0.00523449, -0.99998, 2.08616e-07, -0.999986, 0.00523452, -30.6943, -0.23435, 0.208834)
+[node name="back_right" type="MeshInstance3D" parent="cars/CollisionShape3D"]
+transform = Transform3D(-0.0108929, -2.61148, 0.013632, 0.00877518, -0.0131628, -2.51458, 3.47579, -0.0144344, 0.0122051, 1.34616, 1.08036, 1.27509)
 mesh = SubResource("CylinderMesh_ndp5d")
 skeleton = NodePath("")
 

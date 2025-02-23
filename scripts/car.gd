@@ -1,6 +1,5 @@
 extends VehicleBody3D
 var time = 0
-
 @onready var car = $car_Body
 @onready var mat1 = preload("res://Colors/greenish.tres")
 @onready var mat2 = preload("res://Colors/new_standard_material_3d.tres")
