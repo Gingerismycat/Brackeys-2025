@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://v13kgu044cp5"]
+[gd_scene load_steps=10 format=3 uid="uid://v13kgu044cp5"]
 
 [ext_resource type="Texture2D" uid="uid://so65xq285nvr" path="res://images/road2.png" id="1_t5peh"]
 [ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="2_l7fgt"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://scripts/menu scripts/help_button.gd" id="4_xpaa5"]
 [ext_resource type="Texture2D" uid="uid://ena1l8x7b4ym" path="res://images/ElGato_transparentwithwheelwide.png" id="5_oiub2"]
 [ext_resource type="Texture2D" uid="uid://coft28tqkcnu7" path="res://images/ElGato_transparentwithwheel3.png" id="7_pidvv"]
+[ext_resource type="AudioStream" uid="uid://57fue0eacju6" path="res://audio/intro.mp3" id="8_ieybh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yney0"]
 animations = [{
@@ -84,6 +85,15 @@ theme_override_font_sizes/font_size = 38
 text = "Help?"
 script = ExtResource("4_xpaa5")
 
+[node name="CreditButton" type="Button" parent="MainMenu/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_hover_color = Color(0, 0.611765, 0.141176, 1)
+theme_override_colors/font_color = Color(0.682353, 0.188235, 0.290196, 1)
+theme_override_fonts/font = ExtResource("2_l7fgt")
+theme_override_font_sizes/font_size = 38
+text = "Credits"
+
 [node name="cat" type="AnimatedSprite2D" parent="MainMenu/VBoxContainer"]
 position = Vector2(788, 45)
 scale = Vector2(0.580997, 0.732706)
@@ -92,5 +102,10 @@ autoplay = "default"
 frame = 1
 frame_progress = 0.238917
 
+[node name="Intro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_ieybh")
+autoplay = true
+
 [connection signal="pressed" from="MainMenu/VBoxContainer/DriveButton" to="MainMenu/VBoxContainer/DriveButton" method="_on_pressed"]
 [connection signal="pressed" from="MainMenu/VBoxContainer/HelpButton" to="MainMenu/VBoxContainer/HelpButton" method="_on_pressed"]
+[connection signal="pressed" from="MainMenu/VBoxContainer/CreditButton" to="MainMenu/VBoxContainer/DriveButton" method="_on_credit_button_pressed"]

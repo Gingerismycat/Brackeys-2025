@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bry4ac0bpdbm2"]
+[gd_scene load_steps=5 format=3 uid="uid://bry4ac0bpdbm2"]
 
 [ext_resource type="Texture2D" uid="uid://xhicdwt7korg" path="res://images/death.png" id="1_k5bbj"]
 [ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="2_kyn0i"]
 [ext_resource type="Script" path="res://scripts/menu scripts/deathbuttons.gd" id="3_7hqpo"]
+[ext_resource type="AudioStream" uid="uid://bag6fyj0kni5c" path="res://audio/die.mp3" id="4_3scp5"]
 
 [node name="DeathScreen" type="Control"]
 layout_mode = 3
@@ -26,7 +27,10 @@ theme_override_colors/default_color = Color(0.612322, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_kyn0i")
 theme_override_font_sizes/normal_font_size = 38
 bbcode_enabled = true
-text = "Ooh that looks like it hurt..."
+text = "Ooh that looked like it hurt..."
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
 
 [node name="Score" type="Label" parent="."]
 layout_mode = 0
@@ -52,4 +56,21 @@ theme_override_font_sizes/font_size = 38
 text = "Drive Again?"
 script = ExtResource("3_7hqpo")
 
+[node name="MainMenu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 321.0
+offset_right = 919.0
+offset_bottom = 367.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kyn0i")
+theme_override_font_sizes/font_size = 38
+text = "Main Menu"
+
+[node name="Explosion" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_3scp5")
+volume_db = 5.0
+autoplay = true
+
 [connection signal="pressed" from="TryAgain" to="TryAgain" method="_on_pressed"]
+[connection signal="pressed" from="MainMenu" to="TryAgain" method="_on_main_menu_pressed"]

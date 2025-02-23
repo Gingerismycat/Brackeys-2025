@@ -6,6 +6,7 @@ extends Node3D
 @export var returnSpeed = 10
 @onready var drink_timer = $"../DrinkTimer"
 @onready var juice = $"../Juice"
+@onready var slurp = $"../Slurp"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -29,6 +30,7 @@ func _process(delta):
 	
 	
 	if Input.is_action_just_pressed("Drink") && drink_timer.time_left == 0:
+		slurp.play()
 		Drunkness.drunk+=1
 		drink_timer.start()
 		juice.play()

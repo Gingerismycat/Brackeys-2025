@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cesekmju5l2br"]
+[gd_scene load_steps=13 format=3 uid="uid://cesekmju5l2br"]
 
 [ext_resource type="Script" path="res://scripts/3dmovecar.gd" id="1_mwmwg"]
 [ext_resource type="Texture2D" uid="uid://kguetdqhoa" path="res://images/3dhand.png" id="2_66eco"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://crspkbguy66ns" path="res://images/drinking3.png" id="8_scv5u"]
 [ext_resource type="Script" path="res://scripts/menu scripts/gui.gd" id="9_siedx"]
 [ext_resource type="FontFile" uid="uid://ck0tnifr21q07" path="res://fonts/VeniceClassic.ttf" id="10_1jupj"]
+[ext_resource type="AudioStream" uid="uid://cjgqph02bfoco" path="res://audio/slurp.mp3" id="11_pbue3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7ly42"]
 animations = [{
@@ -103,3 +104,9 @@ bbcode_enabled = true
 text = "[rainbow]Funny Meter"
 fit_content = true
 autowrap_mode = 0
+
+[node name="Slurp" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3876)
+stream = ExtResource("11_pbue3")
+volume_db = -0.835
+max_distance = 4096.0
