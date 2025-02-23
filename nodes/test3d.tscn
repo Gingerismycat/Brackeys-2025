@@ -27,6 +27,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.107376, 0.697865, -0.53993)
 shape = SubResource("BoxShape3D_aa4xi")
 
 [node name="Node3D" parent="." instance=ExtResource("2_v3au1")]
-transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0, 1.14224, -27.0793)
+transform = Transform3D(-4.99289e-08, 0, -1.14224, 0, 1.14224, 0, 1.14224, 0, -4.99289e-08, 0.122752, 1.04332, -27.0203)
 
 [connection signal="body_entered" from="Driver/Area3D" to="Driver/Area3D" method="_on_body_entered"]

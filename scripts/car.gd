@@ -22,8 +22,7 @@ func _ready():
 		car.set_surface_override_material(0,mat5)
 func _physics_process(_delta):
 	var time = work.time
-	
-	position.x +=0.1 +time/10000
+	position.x +=0.3+time
 	if position.x > 65:
 		queue_free()
 	
