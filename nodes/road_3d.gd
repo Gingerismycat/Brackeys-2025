@@ -5,7 +5,7 @@ var check = 69
 var check2 = 27
 func _ready() -> void:
 	work.start = true
-func _process(delta):
+func _process(_delta):
 	if(spawner_timer.time_left == 0):
 		var carp = randi_range(-2,2)*4
 		while carp == check or carp == check2:

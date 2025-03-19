@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://0iya8oipg8yj"]
+
+[ext_resource type="Texture2D" uid="uid://bqmrd6u5jpreb" path="res://3d tests/kloppenheim_02_puresky_2k.exr" id="1_16hpn"]
+[ext_resource type="Script" path="res://nodes/blur.gd" id="2_tljjl"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_navwn"]
+panorama = ExtResource("1_16hpn")
+
+[sub_resource type="Sky" id="Sky_wdr05"]
+sky_material = SubResource("PanoramaSkyMaterial_navwn")
+
+[sub_resource type="Environment" id="Environment_ajaro"]
+background_mode = 2
+sky = SubResource("Sky_wdr05")
+ambient_light_color = Color(1, 1, 1, 1)
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_3eene"]
+dof_blur_far_enabled = true
+dof_blur_far_distance = 31.15
+dof_blur_far_transition = -1.0
+dof_blur_amount = 0.01
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource("Environment_ajaro")
+camera_attributes = SubResource("CameraAttributesPractical_3eene")
+script = ExtResource("2_tljjl")

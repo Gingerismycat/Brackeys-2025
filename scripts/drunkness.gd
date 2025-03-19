@@ -6,4 +6,4 @@ var beginIncr = false
 
 func _process(delta):
 	if beginIncr == true:
-		score+=1*delta*(drunk+1)
+		score+=10*delta*(drunk+1)

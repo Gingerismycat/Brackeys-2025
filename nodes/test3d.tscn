@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bu6ei70r4t1wd"]
+[gd_scene load_steps=9 format=3 uid="uid://bu6ei70r4t1wd"]
 
+[ext_resource type="PackedScene" uid="uid://0iya8oipg8yj" path="res://nodes/world_environment.tscn" id="1_d8seg"]
 [ext_resource type="PackedScene" uid="uid://cesekmju5l2br" path="res://nodes/3d_rotate_wheel.tscn" id="2_b6n6c"]
 [ext_resource type="Script" path="res://scripts/playercollisions.gd" id="2_d72qy"]
 [ext_resource type="PackedScene" uid="uid://b64tq3cqrt83e" path="res://nodes/road 3d.tscn" id="2_v3au1"]
 [ext_resource type="AudioStream" uid="uid://bbaqno74bji5b" path="res://audio/AppleJuice.mp3" id="4_mco10"]
 [ext_resource type="Script" path="res://scripts/background_music.gd" id="5_duv5k"]
-[ext_resource type="Texture2D" uid="uid://bqmrd6u5jpreb" path="res://3d tests/kloppenheim_02_puresky_2k.exr" id="6_54r1t"]
 
 [sub_resource type="GDScript" id="GDScript_0mb3m"]
 script/source = "extends Node3D
@@ -14,21 +14,11 @@ script/source = "extends Node3D
 [sub_resource type="BoxShape3D" id="BoxShape3D_aa4xi"]
 size = Vector3(1.16162, 1, 0.16748)
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_navwn"]
-panorama = ExtResource("6_54r1t")
-
-[sub_resource type="Sky" id="Sky_wdr05"]
-sky_material = SubResource("PanoramaSkyMaterial_navwn")
-
-[sub_resource type="Environment" id="Environment_ajaro"]
-background_mode = 2
-sky = SubResource("Sky_wdr05")
-
-[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_3eene"]
-
 [node name="3DMain" type="Node3D"]
 transform = Transform3D(0.875472, 0, 0, 0, 0.875472, 0, 0, 0, 0.875472, 0, 0, 0)
 script = SubResource("GDScript_0mb3m")
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("1_d8seg")]
 
 [node name="Driver" parent="." instance=ExtResource("2_b6n6c")]
 transform = Transform3D(1.27164, 0, 0, 0, 1.27164, 0, 0, 0, 1.27164, -0.00868778, 1.20034, 5.77889)
@@ -49,9 +39,5 @@ stream = ExtResource("4_mco10")
 volume_db = -6.096
 autoplay = true
 script = ExtResource("5_duv5k")
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_ajaro")
-camera_attributes = SubResource("CameraAttributesPractical_3eene")
 
 [connection signal="body_entered" from="Driver/Area3D" to="Driver/Area3D" method="_on_body_entered"]

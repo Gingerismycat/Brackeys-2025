@@ -9,6 +9,6 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	score.text = "Score: " + str(int(Drunkness.score))
 	funny_meter.text = "[rainbow freq=" + str(0.1+Drunkness.drunk/5.0) + "][tornado radius="+ str(Drunkness.drunk) + "freq=" + str(Drunkness.drunk) + "]Funny Meter: " + str(Drunkness.drunk)

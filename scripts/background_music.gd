@@ -4,5 +4,5 @@ extends AudioStreamPlayer3D
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	background_music.pitch_scale = 1 - Drunkness.drunk*0.02
